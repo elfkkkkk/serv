@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.DemoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-17T10:13:58.979Z" hostname="HOME-PC" time="0.453">
+  <properties/>
+  <testcase name="testCreateAndFindUser()" classname="com.example.demo.DemoApplicationTests" time="0.453"/>
+  <system-out><![CDATA[17:13:54.685 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:13:54.800 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-17T17:13:55.154+07:00  INFO 17336 --- [demo] [    Test worker] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 21.0.6 with PID 17336 (started by kate in C:\Users\kate\Desktop\hw_zaboristoye\lab5)
+2025-03-17T17:13:55.156+07:00  INFO 17336 --- [demo] [    Test worker] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T17:13:55.828+07:00  INFO 17336 --- [demo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17T17:13:55.879+07:00  INFO 17336 --- [demo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-03-17T17:13:56.560+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.database                       : Set default schema name to public
+2025-03-17T17:13:56.846+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-17T17:13:56.880+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-17T17:13:56.881+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : UPDATE SUMMARY
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : Run:                          0
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : Previously run:               1
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : Filtered out:                 0
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : -------------------------------
+2025-03-17T17:13:56.888+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : Total change sets:            1
+2025-03-17T17:13:56.889+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.util                           : Update summary generated
+2025-03-17T17:13:56.890+07:00  INFO 17336 --- [demo] [    Test worker] liquibase.command                        : Command execution complete
+2025-03-17T17:13:56.945+07:00  INFO 17336 --- [demo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-17T17:13:56.985+07:00  INFO 17336 --- [demo] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28519bfb
+2025-03-17T17:13:56.987+07:00  INFO 17336 --- [demo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-17T17:13:57.052+07:00  INFO 17336 --- [demo] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17T17:13:57.115+07:00  INFO 17336 --- [demo] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-17T17:13:57.151+07:00  INFO 17336 --- [demo] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-17T17:13:57.390+07:00  INFO 17336 --- [demo] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-17T17:13:57.451+07:00  INFO 17336 --- [demo] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-17T17:13:58.015+07:00  INFO 17336 --- [demo] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-17T17:13:58.019+07:00  INFO 17336 --- [demo] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17T17:13:58.444+07:00  WARN 17336 --- [demo] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T17:13:58.497+07:00  INFO 17336 --- [demo] [    Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-17T17:13:58.959+07:00  INFO 17336 --- [demo] [    Test worker] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 4.048 seconds (process running for 4.966)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\kate\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
